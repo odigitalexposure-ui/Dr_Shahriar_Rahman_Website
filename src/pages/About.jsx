@@ -376,7 +376,7 @@ const About = () => {
                 Book a Consultation for Your Child Today
               </h3>
               <p className="text-slate-400 text-sm mt-1">
-                Direct mobile and chamber booking helpline: <strong>8537059337</strong>
+                Direct mobile and chamber booking helpline: <strong>8537059337 / 86175 70082</strong>
               </p>
             </div>
             <Link

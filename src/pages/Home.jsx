@@ -52,7 +52,7 @@ const marqueeDoctorItems = [
     'Developmental Milestones & Growth Audits',
     'Childhood Fevers, Dengue & Infection Care',
     'Prachi Medical Center, Raninagar, Berhampore (Opp. Gate No 1)',
-    'Chamber Helpline: 8537059337',
+    'Chamber Helpline: 8537059337 / 86175 70082',
 ];
 
 const doctorSlides = [
@@ -442,10 +442,10 @@ const Home = () => {
                             </div>
 
                             {/* Action Buttons */}
-                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-4 w-full sm:w-auto">
                                 <Link
                                     to="/contact"
-                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.55)] transition-all duration-300 transform hover:-translate-y-0.5"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-[0_0_25px_rgba(212,175,55,0.35)] hover:shadow-[0_0_35px_rgba(212,175,55,0.55)] transition-all duration-300 transform hover:-translate-y-0.5"
                                 >
                                     <Calendar className="w-4 h-4" />
                                     <span>Book Chamber Appointment</span>
@@ -456,10 +456,18 @@ const Home = () => {
                                     href="https://wa.me/918537059337?text=Hello%20Dr.%20Shahriar%20Rahman,%20I%20would%20like%20to%20inquire%20about%20a%20child%20consultation."
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/90 border border-slate-700 hover:border-emerald-500 hover:text-emerald-300 transition-all duration-300"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/90 border border-slate-700 hover:border-emerald-500 hover:text-emerald-300 transition-all duration-300"
                                 >
                                     <Phone className="w-4 h-4 text-emerald-400" />
                                     <span>WhatsApp: 8537059337</span>
+                                </a>
+
+                                <a
+                                    href="tel:8617570082"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900/90 border border-slate-700 hover:border-amber-400 hover:text-amber-300 transition-all duration-300"
+                                >
+                                    <Phone className="w-4 h-4 text-amber-400" />
+                                    <span>Call: 86175 70082</span>
                                 </a>
                             </div>
                         </motion.div>
@@ -875,10 +883,10 @@ const Home = () => {
                                 Chamber situated at Swarnamoyee Market Complex, Station Road, Raninagar, Gorabazar, Berhampore (Opposite to Medical College Gate No 1).
                             </p>
 
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
                                 <Link
                                     to="/contact"
-                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all"
                                 >
                                     <Calendar className="w-4 h-4" />
                                     <span>Book Chamber Slot Now</span>
@@ -888,10 +896,18 @@ const Home = () => {
                                     href="https://wa.me/918537059337?text=Hello%20Dr.%20Shahriar%20Rahman,%20I%20would%20like%20to%20book%20a%20child%20consultation."
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900 border border-slate-700 hover:border-emerald-500 hover:text-emerald-300 transition-all"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900 border border-slate-700 hover:border-emerald-500 hover:text-emerald-300 transition-all"
                                 >
                                     <Phone className="w-4 h-4 text-emerald-400" />
                                     <span>WhatsApp: 8537059337</span>
+                                </a>
+
+                                <a
+                                    href="tel:8617570082"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-200 bg-slate-900 border border-slate-700 hover:border-amber-400 hover:text-amber-300 transition-all"
+                                >
+                                    <Phone className="w-4 h-4 text-amber-400" />
+                                    <span>Call: 86175 70082</span>
                                 </a>
                             </div>
                         </div>

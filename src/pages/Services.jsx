@@ -231,7 +231,7 @@ const Services = () => {
               {
                 step: '04',
                 title: 'Direct Parent Support',
-                desc: 'Accessible chamber contact at 8537059337 for follow-ups, immunization tracking, or emergency guidance.',
+                desc: 'Accessible chamber contact at 8537059337 / 86175 70082 for follow-ups, immunization tracking, or emergency guidance.',
               },
             ].map((phase, idx) => (
               <div

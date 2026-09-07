@@ -142,12 +142,21 @@ const Footer = () => {
               <Phone className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <div>
                 <span className="text-slate-400 text-xs block">Mobile & Chamber Booking:</span>
-                <a
-                  href="tel:8537059337"
-                  className="text-base font-bold text-amber-400 hover:text-amber-300 transition-colors"
-                >
-                  8537059337
-                </a>
+                <div className="flex flex-wrap items-center gap-2">
+                  <a
+                    href="tel:8537059337"
+                    className="text-base font-bold text-amber-400 hover:text-amber-300 transition-colors"
+                  >
+                    8537059337
+                  </a>
+                  <span className="text-slate-600 font-bold">/</span>
+                  <a
+                    href="tel:8617570082"
+                    className="text-base font-bold text-amber-400 hover:text-amber-300 transition-colors"
+                  >
+                    86175 70082
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -164,7 +173,7 @@ const Footer = () => {
         {/* Medical Disclaimer */}
         <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 text-[11px] sm:text-xs text-slate-400 leading-relaxed mb-8">
           <strong className="text-slate-300 font-medium block mb-1">Medical Notice for Parents:</strong>
-          The information on this website is for informational and consultation scheduling purposes. In acute pediatric emergencies (severe breathing difficulty, unresponsive state, or seizure), immediately proceed to the Murshidabad Medical College & Hospital Emergency Ward or call <strong>8537059337</strong>.
+          The information on this website is for informational and consultation scheduling purposes. In acute pediatric emergencies (severe breathing difficulty, unresponsive state, or seizure), immediately proceed to the Murshidabad Medical College & Hospital Emergency Ward or call <strong>8537059337 / 86175 70082</strong>.
         </div>
 
         {/* Bottom Bar with Required Developer Credit */}

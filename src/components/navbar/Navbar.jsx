@@ -169,10 +169,15 @@ const Navbar = () => {
                   <span>Book Chamber Appointment</span>
                 </Link>
 
-                <div className="flex items-center justify-center gap-4 mt-4 text-xs text-slate-400">
+                <div className="flex flex-wrap items-center justify-center gap-3 mt-4 text-xs text-slate-400">
                   <a href="tel:8537059337" className="flex items-center gap-1.5 text-amber-300 hover:text-amber-200 font-semibold">
                     <Phone className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Call Chamber: 8537059337</span>
+                    <span>8537059337</span>
+                  </a>
+                  <span className="text-slate-600 font-bold">•</span>
+                  <a href="tel:8617570082" className="flex items-center gap-1.5 text-amber-300 hover:text-amber-200 font-semibold">
+                    <Phone className="w-3.5 h-3.5 text-amber-400" />
+                    <span>86175 70082</span>
                   </a>
                 </div>
               </div>

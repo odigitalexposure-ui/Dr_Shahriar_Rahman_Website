@@ -38,7 +38,7 @@ const EnquiryForm = () => {
     setTimeout(() => {
       setStatus({
         state: 'success',
-        message: 'Thank you! Your appointment request has been recorded. Our chamber desk at Prachi Medical Center will call or WhatsApp you at 8537059337 to confirm your serial number.',
+        message: 'Thank you! Your appointment request has been recorded. Our chamber desk at Prachi Medical Center will call or WhatsApp you at 8537059337 / 86175 70082 to confirm your serial number.',
       });
       setFormData({
         childName: '',
@@ -67,7 +67,7 @@ const EnquiryForm = () => {
               Book Child <span className="font-serif italic text-amber-400">Consultation</span>
             </h3>
             <p className="text-slate-400 text-xs sm:text-sm mt-1">
-              Submit your child's appointment request or connect directly on WhatsApp at <strong>8537059337</strong>.
+              Submit your child's appointment request or connect directly on WhatsApp at <strong>8537059337 / 86175 70082</strong>.
             </p>
           </div>
 

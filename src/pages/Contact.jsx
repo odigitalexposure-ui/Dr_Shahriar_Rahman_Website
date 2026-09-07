@@ -31,7 +31,7 @@ const Contact = () => {
             Contact <span className="font-serif italic gold-text-gradient">Dr. Shahriar Rahman</span>
           </h1>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Chamber at Prachi Medical Center, Swarnamoyee Market Complex, Raninagar, Berhampore (Opposite to Medical College Gate No 1). Call or WhatsApp at <strong className="text-amber-300">8537059337</strong>.
+            Chamber at Prachi Medical Center, Swarnamoyee Market Complex, Raninagar, Berhampore (Opposite to Medical College Gate No 1). Call or WhatsApp at <strong className="text-amber-300">8537059337 / 86175 70082</strong>.
           </p>
         </div>
       </div>
@@ -55,9 +55,15 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-xs font-semibold text-slate-200">Mobile & WhatsApp</h4>
-              <a href="tel:8537059337" className="text-xs font-bold text-amber-300 hover:underline">
-                8537059337
-              </a>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <a href="tel:8537059337" className="text-xs font-bold text-amber-300 hover:underline">
+                  8537059337
+                </a>
+                <span className="text-slate-600 text-xs">/</span>
+                <a href="tel:8617570082" className="text-xs font-bold text-amber-300 hover:underline">
+                  86175 70082
+                </a>
+              </div>
             </div>
           </div>
 

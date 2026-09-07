@@ -115,7 +115,7 @@ const conceptsData = [
     bullets: [
       'Opposite to Medical College Gate No 1',
       'Easy access from Berhampore Court Station & Gorabazar',
-      'Direct telephone booking via 8537059337',
+      'Direct telephone booking via 8537059337 / 86175 70082',
     ],
   },
 ];

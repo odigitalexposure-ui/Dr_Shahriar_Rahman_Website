@@ -103,12 +103,21 @@ const AddressCard = () => {
                   Call directly for consultation serials & emergency tokens:
                 </p>
                 <div className="mt-1.5">
-                  <a
-                    href="tel:8537059337"
-                    className="text-base sm:text-lg font-bold text-amber-400 hover:text-amber-300 transition-colors"
-                  >
-                    8537059337
-                  </a>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <a
+                      href="tel:8537059337"
+                      className="text-base sm:text-lg font-bold text-amber-400 hover:text-amber-300 transition-colors"
+                    >
+                      8537059337
+                    </a>
+                    <span className="text-slate-600 font-bold">/</span>
+                    <a
+                      href="tel:8617570082"
+                      className="text-base sm:text-lg font-bold text-amber-400 hover:text-amber-300 transition-colors"
+                    >
+                      86175 70082
+                    </a>
+                  </div>
                   <span className="text-slate-400 text-xs block mt-0.5">
                     Mobile & WhatsApp Enabled
                   </span>
@@ -145,7 +154,7 @@ const AddressCard = () => {
           <div className="flex items-center gap-2.5 p-3 rounded-xl bg-amber-950/20 border border-amber-800/30 text-amber-200 text-xs">
             <AlertCircle className="w-4 h-4 shrink-0 text-amber-400" />
             <p>
-              <strong className="font-semibold text-amber-300">Parent Advisory:</strong> For acute respiratory distress, high persistent fever, or neonate refusal to feed, visit immediately or call <strong>8537059337</strong>.
+              <strong className="font-semibold text-amber-300">Parent Advisory:</strong> For acute respiratory distress, high persistent fever, or neonate refusal to feed, visit immediately or call <strong>8537059337 / 86175 70082</strong>.
             </p>
           </div>
         </div>

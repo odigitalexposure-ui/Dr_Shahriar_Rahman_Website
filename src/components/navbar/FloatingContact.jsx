@@ -55,7 +55,7 @@ const FloatingContact = () => {
                 </div>
               </a>
 
-              {/* Option 2: Direct Calling */}
+              {/* Option 2: Direct Calling 1 */}
               <a
                 href="tel:8537059337"
                 onClick={() => setIsOpen(false)}
@@ -67,6 +67,25 @@ const FloatingContact = () => {
                   </span>
                   <span className="block text-[11px] text-slate-900 font-semibold">
                     8537059337
+                  </span>
+                </div>
+                <div className="w-10 h-10 rounded-xl bg-slate-950/15 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5 text-slate-950" />
+                </div>
+              </a>
+
+              {/* Option 3: Direct Calling 2 */}
+              <a
+                href="tel:8617570082"
+                onClick={() => setIsOpen(false)}
+                className="group flex items-center gap-3 px-4 py-3 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-300 hover:from-amber-400 hover:to-amber-200 text-slate-950 shadow-[0_8px_25px_rgba(212,175,55,0.45)] hover:shadow-[0_10px_35px_rgba(212,175,55,0.65)] transition-all duration-300 transform hover:-translate-x-1"
+              >
+                <div className="text-right">
+                  <span className="block text-xs font-bold tracking-wide">
+                    Call Helpline
+                  </span>
+                  <span className="block text-[11px] text-slate-900 font-semibold">
+                    86175 70082
                   </span>
                 </div>
                 <div className="w-10 h-10 rounded-xl bg-slate-950/15 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">

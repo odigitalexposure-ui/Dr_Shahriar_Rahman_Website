@@ -16,7 +16,7 @@ const defaultFaqs = [
   {
     question: 'How can I book a serial or appointment token for my child?',
     answer:
-      'You can call the chamber directly at 8537059337, message via WhatsApp with your child’s details, or submit the booking form on this website. Advance booking is recommended to avoid long waiting times for young children.',
+      'You can call the chamber directly at 8537059337 / 86175 70082, message via WhatsApp with your child’s details, or submit the booking form on this website. Advance booking is recommended to avoid long waiting times for young children.',
   },
   {
     question: 'What hospital affiliations and credentials does Dr. Shahriar Rahman hold?',
