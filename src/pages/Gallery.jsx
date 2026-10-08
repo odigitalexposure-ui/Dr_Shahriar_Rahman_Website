@@ -5,8 +5,24 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 // Use import.meta.glob to dynamically load all images from assets
 const imageModules = import.meta.glob('../assets/*.{jpeg,jpg,png}', { eager: true });
 
-// Extract the URL from the imported modules
-const images = Object.values(imageModules).map(mod => mod.default || mod);
+// Extract the URL from the imported modules and sort them naturally
+const images = Object.keys(imageModules)
+  .sort((a, b) => {
+    // Extract numbers from filenames for natural sorting (e.g. img2.jpeg before img10.jpeg)
+    const numA = parseInt(a.match(/\d+/)?.[0] || '0', 10);
+    const numB = parseInt(b.match(/\d+/)?.[0] || '0', 10);
+    
+    // If both have numbers and share a common prefix, sort by number
+    const prefixA = a.replace(/\d+.*$/, '');
+    const prefixB = b.replace(/\d+.*$/, '');
+    
+    if (prefixA === prefixB) {
+      return numA - numB;
+    }
+    return a.localeCompare(b);
+  })
+  .map(key => imageModules[key].default || imageModules[key]);
+
 
 const Gallery = () => {
   const [selectedImgIndex, setSelectedImgIndex] = useState(null);
@@ -49,14 +65,14 @@ const Gallery = () => {
     <div className="min-h-screen bg-[#0B0F17] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto pt-10">
         <div className="text-center mb-16">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-serif font-bold text-slate-100 mb-4"
           >
             Our <span className="text-amber-400 italic">Gallery</span>
           </motion.h1>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
@@ -119,7 +135,7 @@ const Gallery = () => {
             </button>
 
             {/* Main Content */}
-            <div 
+            <div
               className="relative w-full max-w-6xl max-h-[90vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
@@ -150,7 +166,7 @@ const Gallery = () => {
                 <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
               </button>
             </div>
-            
+
             {/* Image Counter */}
             <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 px-5 py-2.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-slate-200 text-sm font-semibold tracking-wide shadow-lg backdrop-blur-md">
               {selectedImgIndex + 1} <span className="text-slate-500 font-normal mx-1">/</span> {images.length}
