@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   Baby,
   MapPin,
@@ -8,7 +8,7 @@ import {
   ShieldCheck,
   Building2,
   ChevronRight,
-} from 'lucide-react';
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -26,7 +26,10 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="font-serif font-bold text-lg text-slate-100">
-                  Dr. Shahriar <span className="font-serif italic text-amber-400">Rahman</span>
+                  Dr. Shahriar{" "}
+                  <span className="font-serif italic text-amber-400">
+                    Rahman
+                  </span>
                 </h3>
                 <p className="text-[11px] uppercase tracking-wider text-slate-400 font-medium">
                   M.B.B.S., MD(Cal), P.G.D.C.H.
@@ -38,7 +41,9 @@ const Footer = () => {
             </div>
 
             <p className="text-sm text-slate-400 leading-relaxed">
-              Providing compassionate, evidence-based healthcare for newborns, infants, children, and adolescents with dedicated hospital-grade clinical precision.
+              Providing compassionate, evidence-based healthcare for newborns,
+              infants, children, and adolescents with dedicated hospital-grade
+              clinical precision.
             </p>
 
             <div className="space-y-1.5 pt-1 text-xs">
@@ -64,11 +69,12 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2.5 text-sm">
               {[
-                { name: 'Home Overview', path: '/' },
-                { name: 'Doctor Profile & Qualifications', path: '/about' },
-                { name: 'Pediatric Care & Services', path: '/services' },
-                { name: 'Why Parents Choose Us', path: '/why-choose-us' },
-                { name: 'Chamber Location & Contact', path: '/contact' },
+                { name: "Home ", path: "/" },
+                { name: "About", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "WhyChoose Us", path: "/why-choose-us" },
+                { name: "Gallery", path: "/gallery" },
+                { name: "Contact", path: "/contact" },
               ].map((item, idx) => (
                 <li key={idx}>
                   <Link
@@ -127,21 +133,28 @@ const Footer = () => {
             <div className="flex items-start gap-2.5 text-slate-400 text-xs sm:text-sm">
               <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <div>
-                <p className="text-slate-200 font-semibold">PRACHI MEDICAL CENTER</p>
+                <p className="text-slate-200 font-semibold">
+                  PRACHI MEDICAL CENTER
+                </p>
                 <p className="text-slate-300 text-xs mt-0.5">
-                  Swarnamoyee Market Complex, Station Road, Raninagar, Gorabazar,
+                  Swarnamoyee Market Complex, Station Road, Raninagar,
+                  Gorabazar,
                 </p>
                 <p className="text-amber-300/90 text-xs font-medium">
                   Berhampore (Opposite to Medical College Gate No 1)
                 </p>
-                <p className="text-slate-400 text-xs">Murshidabad, West Bengal, 742101</p>
+                <p className="text-slate-400 text-xs">
+                  Murshidabad, West Bengal, 742101
+                </p>
               </div>
             </div>
 
             <div className="flex items-start gap-2.5 text-slate-400 text-xs sm:text-sm pt-2 border-t border-slate-800/80">
               <Phone className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <div>
-                <span className="text-slate-400 text-xs block">Mobile & Chamber Booking:</span>
+                <span className="text-slate-400 text-xs block">
+                  Mobile & Chamber Booking:
+                </span>
                 <div className="flex flex-wrap items-center gap-2">
                   <a
                     href="tel:8537059337"
@@ -163,8 +176,12 @@ const Footer = () => {
             <div className="flex items-start gap-2.5 text-slate-400 text-xs sm:text-sm">
               <Clock className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <div>
-                <p className="text-slate-200 font-medium">Regular OPD Sessions</p>
-                <p className="text-slate-400 text-xs">Morning & Evening Chambers</p>
+                <p className="text-slate-200 font-medium">
+                  Regular OPD Sessions
+                </p>
+                <p className="text-slate-400 text-xs">
+                  Morning & Evening Chambers
+                </p>
               </div>
             </div>
           </div>
@@ -172,14 +189,21 @@ const Footer = () => {
 
         {/* Medical Disclaimer */}
         <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 text-[11px] sm:text-xs text-slate-400 leading-relaxed mb-8">
-          <strong className="text-slate-300 font-medium block mb-1">Medical Notice for Parents:</strong>
-          The information on this website is for informational and consultation scheduling purposes. In acute pediatric emergencies (severe breathing difficulty, unresponsive state, or seizure), immediately proceed to the Murshidabad Medical College & Hospital Emergency Ward or call <strong>8537059337 / 86175 70082</strong>.
+          <strong className="text-slate-300 font-medium block mb-1">
+            Medical Notice for Parents:
+          </strong>
+          The information on this website is for informational and consultation
+          scheduling purposes. In acute pediatric emergencies (severe breathing
+          difficulty, unresponsive state, or seizure), immediately proceed to
+          the Murshidabad Medical College & Hospital Emergency Ward or call{" "}
+          <strong>8537059337 / 86175 70082</strong>.
         </div>
 
         {/* Bottom Bar with Required Developer Credit */}
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            © {new Date().getFullYear()} Dr. Shahriar Rahman (M.B.B.S., MD(Cal), P.G.D.C.H.). All Rights Reserved.
+            © {new Date().getFullYear()} Dr. Shahriar Rahman (M.B.B.S., MD(Cal),
+            P.G.D.C.H.).
           </p>
 
           {/* EXACT DEVELOPER CREDIT HTML BLOCK */}
@@ -191,7 +215,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="font-bold hover:text-red-700 transition-colors duration-300 ml-1"
             >
-              Digital Exposure Online Service 
+              Digital Exposure Online Service
             </a>
           </div>
         </div>

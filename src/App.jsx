@@ -11,6 +11,7 @@ const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const WhyChooseUs = lazy(() => import('./pages/WhyChooseUs'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Gallery = lazy(() => import('./pages/Gallery'));
 
 /**
  * ScrollToTop on route change:
@@ -63,6 +64,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/why-choose-us" element={<WhyChooseUs />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/gallery" element={<Gallery />} />
               {/* Fallback to Home */}
               <Route path="*" element={<Home />} />
             </Routes>

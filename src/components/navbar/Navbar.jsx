@@ -15,6 +15,7 @@ const navLinks = [
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
   { name: 'WhyChoose', path: '/why-choose-us' },
+  { name: 'Gallery', path: '/gallery' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -60,7 +61,7 @@ const Navbar = () => {
               <div className="text-lg sm:text-xl font-serif font-bold tracking-tight text-slate-100 group-hover:text-amber-300 transition-colors">
                 Dr. Shahriar <span className="font-serif italic text-amber-400">Rahman</span>
               </div>
-              <div className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-medium">
+              <div className="hidden md:block text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-medium">
                 M.B.B.S., MD(Cal), P.G.D.C.H. · Child Specialist & Neonatology
               </div>
             </div>
